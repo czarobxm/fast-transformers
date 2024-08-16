@@ -40,6 +40,8 @@ except ImportError as e:
 
 @lru_cache(None)
 def cuda_toolkit_available():
+    import os
+    os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
     try:
         call(["nvcc"], stdout=DEVNULL, stderr=DEVNULL)
         return True
