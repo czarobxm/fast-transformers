@@ -1,3 +1,5 @@
+import os # adding this line
+os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
 #
 # Copyright (c) 2020 Idiap Research Institute, http://www.idiap.ch/
 # Written by Angelos Katharopoulos <angelos.katharopoulos@idiap.ch>,
