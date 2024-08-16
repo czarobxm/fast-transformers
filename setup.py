@@ -1,3 +1,6 @@
+# Add /usr/local/cuda/bin/ to PATH as adding it manually from command line does not work
+os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
+
 #!/usr/bin/env python
 #
 # Copyright (c) 2020 Idiap Research Institute, http://www.idiap.ch/
@@ -27,9 +30,6 @@ except ImportError as e:
         name=e.name,
         path=e.path
     ) from e
-
-# Add /usr/local/cuda/bin/ to PATH as adding it manually from command line does not work
-os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
 
 
 @lru_cache(None)
