@@ -205,6 +205,8 @@ def setup_package():
         long_description = f.read()
     meta = collect_metadata()
     version_suffix = os.getenv("FAST_TRANSFORMERS_VERSION_SUFFIX", "")
+    ext = get_extensions()
+    print(ext)
     setup(
         name="pytorch-fast-transformers",
         version=meta["version"] + version_suffix,
@@ -225,7 +227,7 @@ def setup_package():
             "Programming Language :: Python :: 3.6",
         ],
         packages=find_packages(exclude=["docs", "tests", "scripts", "examples"]),
-        ext_modules=get_extensions(),
+        ext_modules=ext,
         cmdclass={"build_ext": BuildExtension},
         install_requires=["torch"]
     )
