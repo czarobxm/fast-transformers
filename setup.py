@@ -1,4 +1,5 @@
 # Add /usr/local/cuda/bin/ to PATH as adding it manually from command line does not work
+import os
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
 
 #!/usr/bin/env python
