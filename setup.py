@@ -1,6 +1,8 @@
 # Add /usr/local/cuda/bin/ to PATH as adding it manually from command line does not work
 import os
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
+os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1222/bin/"
+os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1251/bin/"
 
 #!/usr/bin/env python
 #
