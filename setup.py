@@ -28,6 +28,9 @@ except ImportError as e:
         path=e.path
     ) from e
 
+# Add /usr/local/cuda/bin/ to PATH as adding it manually from command line does not work
+os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
+
 
 @lru_cache(None)
 def cuda_toolkit_available():
