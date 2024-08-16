@@ -4,9 +4,9 @@ os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1222/bin/"
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1251/bin/"
 
-os.environ["PAT"] = os.environ["PAT"]+":/usr/local/cuda/lib64"
-os.environ["PAT"] = os.environ["PAT"]+":/usr/local/cuda_1222/lib64"
-os.environ["PAT"] = os.environ["PAT"]+":/usr/local/cuda_1251/lib64"
+os.environ["PATH"] = os.environ["PAT"]+":/usr/local/cuda/lib64"
+os.environ["PATH"] = os.environ["PAT"]+":/usr/local/cuda_1222/lib64"
+os.environ["PATH"] = os.environ["PAT"]+":/usr/local/cuda_1251/lib64"
 
 #
 # Copyright (c) 2020 Idiap Research Institute, http://www.idiap.ch/
