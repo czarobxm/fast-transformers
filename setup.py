@@ -4,7 +4,7 @@ os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda/bin/"
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1222/bin/"
 os.environ["PATH"] = os.environ["PATH"]+":/usr/local/cuda_1251/bin/"
 
-os.environ["LD_LIBRARY_PATH"] = os.environ["LD_LIBRARY_PATH"]+":/usr/local/cuda/lib64"
+os.environ["LD_LIBRARY_PATH"] = "/usr/local/cuda/lib64"
 os.environ["LD_LIBRARY_PATH"] = os.environ["LD_LIBRARY_PATH"]+":/usr/local/cuda_1222/lib64"
 os.environ["LD_LIBRARY_PATH"] = os.environ["LD_LIBRARY_PATH"]+":/usr/local/cuda_1251/lib64"
 
